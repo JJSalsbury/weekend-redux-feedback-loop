@@ -10,17 +10,40 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
 //REDUCERS
-const feedbackList = ( state = [], action) => {
-    if (action.type === 'SET_FEEDBACK') {
+const setFeeling = ( state = 0, action) => {
+    if (action.type === 'SET_FEELING') {
         return action.payload
     }
     return state;
 }
 
+const setUnderstanding = ( state = 0, action) => {
+    if (action.type === 'SET_UNDERSTANDING') {
+        return action.payload
+    }
+    return state;
+}
+
+const setSupport = ( state = 0, action) => {
+    if (action.type === 'SET_SUPPORT') {
+        return action.payload
+    }
+    return state;
+}
+
+const setComments = ( state = '', action) => {
+    if (action.type === 'SET_COMMENTS') {
+        return action.payload
+    }
+    return state;
+}
 //REDUX STORE
 const reduxStore = createStore(
     combineReducers({
-        feedbackList
+        setFeeling,
+        setUnderstanding,
+        setSupport,
+        setComments
     }),
     applyMiddleware(logger)
 );

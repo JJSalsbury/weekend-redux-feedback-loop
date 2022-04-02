@@ -13,6 +13,7 @@ import Home from '../Home/Home';
 import FeelingItem from '../FeelingItem/FeelingItem';
 import UnderstandingItem from '../UnderstandingItem/UnderstandingItem';
 import SupportItem from '../SupportItem/SupportItem';
+import CommentsItem from '../CommentsItem/CommentsItem';
 
 function App() {
 
@@ -51,6 +52,9 @@ function App() {
          <li>
            <Link to="/supportItem">Support</Link>
          </li>
+         <li>
+           <Link to="/commentsItem">Comments</Link>
+         </li>
        </ul>
     {/* <div className='App'>
       <header className='App-header'>
@@ -66,7 +70,7 @@ function App() {
         <Home />
       </Route>
 
-      <Route path="/feelingItem">
+      <Route path="/feelingItem" exact>
       <FeelingItem />
       </Route>
 
@@ -76,6 +80,10 @@ function App() {
 
       <Route path="/supportItem">
       <SupportItem />
+      </Route>
+
+      <Route path="/commentsItem">
+      <CommentsItem />
       </Route>
    </div>
 
