@@ -26,12 +26,16 @@ function CommentsForm({commentsForm}) {
     return (
         <div>
             <p>Any comments you wanted to leave?</p>
-            <form  onSubmit={handleClick}>      
-            <textarea value= {commentsOption} onChange={(event) => setCommentsOption(event.target.value)} className="size" type="text" placeholder="Comments" required/>
-            <button className="size">NEXT</button>
-            </form>  
+            <form  id="commentSection" onSubmit={handleClick}>
+            <div id="textArea">      
+            <textarea rows="20" cols="75" value= {commentsOption} onChange={(event) => setCommentsOption(event.target.value)} className="size" type="text" placeholder="Comments" required/>
+            </div>
+            <button id="commentsBtn">NEXT</button>
+            </form>
         </div>
     );
+
+
 
 }
 

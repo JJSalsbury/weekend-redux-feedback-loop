@@ -1,6 +1,7 @@
 import {useDispatch} from 'react-redux';
 import {useState} from 'react';
-import {useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom';
+
 
 function FeelingForm({feelingForm}) {
     console.log('FeelingForm Component')
@@ -28,7 +29,7 @@ function FeelingForm({feelingForm}) {
         <section>
         <form onSubmit={handleClick}>      
         <input onChange={event => setFeelingOption(event.target.value)} className="size" min={1} max={5} required value= {feelingOption}  type="number"/>
-        <button  className="size">NEXT</button>
+        <button className="size">NEXT</button>
         </form>
         </section>  
         </div>

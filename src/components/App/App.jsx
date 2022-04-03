@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
+
 //Imports
 // import { useDispatch } from 'react-redux';
 import {useEffect} from 'react';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 
 //Component Imports
-// import FeedbackList from './FeedbackList/FeedbackList';
 import Home from '../Home/Home';
 import FeelingForm from '../FeelingForm/FeelingForm';
 import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';

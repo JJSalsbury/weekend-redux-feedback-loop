@@ -19,11 +19,30 @@
   font-size: x-large;
 }
 
+.size {
+  font-size: x-large;
+}
+
 h4 {
   font-size: x-large;
   font-style: italic;
 }
 
-.size {
-  font-size: 25px;
+#textArea {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 2em;
+
+}
+
+#commentsBtn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* remove */
+#commentSection{
+  display: inline-block;
+  margin-left: 150px;
+
 }
