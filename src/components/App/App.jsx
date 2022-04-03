@@ -15,6 +15,7 @@ import UnderstandingItem from '../UnderstandingItem/UnderstandingItem';
 import SupportItem from '../SupportItem/SupportItem';
 import CommentsItem from '../CommentsItem/CommentsItem';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import ThankYouItem from '../ThankYouItem/ThankYouItem';
 
 function App() {
 
@@ -65,7 +66,7 @@ function App() {
         <Home />
       </Route> */}
 
-      <Route path="/feelingItem" exact>
+      <Route path="/" exact>
       <FeelingItem />
       </Route>
 
@@ -83,6 +84,10 @@ function App() {
 
       <Route path="/reviewItem">
       <ReviewItem />
+      </Route>
+
+      <Route path="/thanks">
+      <ThankYouItem />
       </Route>
    </div>
 

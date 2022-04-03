@@ -11,7 +11,6 @@ import { HashRouter as Router, useHistory } from 'react-router-dom';
 function ReviewItem() {
 
     const history = useHistory();
-    const dispatch = useDispatch();
 
     const feelingItem = useSelector(store => store.setFeeling)
     const understandingItem = useSelector(store => store.setUnderstanding)
@@ -30,7 +29,7 @@ function ReviewItem() {
         axios.post('/feedback', studentFeedback) 
 
             .then(response => {
-                // history.push('/thanks');
+                history.push('/thanks');
                 console.log('Feedback Submitted!')
             }).catch(err => {
                 console.log(err);
