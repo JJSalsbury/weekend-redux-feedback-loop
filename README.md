@@ -14,11 +14,11 @@ Input validation: Each step allows the user to advance to the next step if a sco
 
 In the review form view, a user is able to review, but not change, their feedback and submit. 
 
-When the submit button is clicked, the submission is saved to the database. The user should see a submission success page, or, "thank you" page. They can then click the button to take a new survey, which will reset all the data and go back to start a new reflection.
+When the submit button is clicked, the submission is saved to the database. The user should see a submission success page, or "thank you" page. They can then click the button to take a new survey, which will reset all the data and go back to start a new reflection.
 
 I was introduced to to REDUX the Monday before the start of my project. By Thursday of that same week, I was using REACT and REDUX to accomplish project. Developing the project started with thoughtful and intentional preplanning, which made the execution of the project much easier. I developed a solid plan.
 
-When creating the express route I used the app.use method to put the specified middleware function on a specified path. In the code body, I used the server and then created the server requirement. This made it so that my express route couldn't function. Once I moved the line of code with the method after the server requirement, it was able to run. Lesson learned. 
+A challenge I came across, was when creating the express route I used the app.use method to put the specified middleware function on a specified path. In the code body, I used the server and then created the server requirement. This made it so that my express route couldn't function. Once I moved the line of code with the method after the server requirement, it was able to run. Lesson learned. 
 
 
 ## Screen Shot
@@ -67,7 +67,7 @@ Link to software that is required to install the app (e.g. node).
 
 ## Acknowledgement
 
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. And thank you to my fellow students who provided support and helped great an amazing environment for collaborative learning. And of course, thanks to Prime, the subject and inspiration for this application. 
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. And thank you to my fellow students who provided support and helped create an amazing environment for collaborative learning. And of course, thanks to Prime, the subject and inspiration for this application. 
 
 ## Support  
 
