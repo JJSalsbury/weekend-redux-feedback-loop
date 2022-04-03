@@ -3,8 +3,8 @@ import {useDispatch} from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom'
 
-function FeelingItem({feelingItem}) {
-    console.log('FeelingItem Component')
+function FeelingForm({feelingForm}) {
+    console.log('FeelingForm Component')
 
     const [feelingOption, setFeelingOption] = useState(0);
 
@@ -19,7 +19,7 @@ function FeelingItem({feelingItem}) {
             type:'SET_FEELING',
             payload: feelingOption
         })
-        history.push('/understandingItem');
+        history.push('/understandingForm');
     }
 
     return (
@@ -38,4 +38,4 @@ function FeelingItem({feelingItem}) {
 
 }
 
-export default FeelingItem;
+export default FeelingForm;

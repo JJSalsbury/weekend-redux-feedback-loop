@@ -4,8 +4,8 @@ import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
 
 
-function CommentsItem({commentsItem}) {
-    console.log('CommentsItem Component')
+function CommentsForm({commentsForm}) {
+    console.log('CommentsForm Component')
 
     const [commentsOption, setCommentsOption] = useState('');
 
@@ -21,7 +21,7 @@ function CommentsItem({commentsItem}) {
             type:'SET_COMMENTS',
             payload: commentsOption           
         })
-        history.push('/reviewItem');
+        history.push('/reviewForm');
     }
 
     return (
@@ -36,4 +36,4 @@ function CommentsItem({commentsItem}) {
 
 }
 
-export default CommentsItem;
+export default CommentsForm;

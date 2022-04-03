@@ -10,12 +10,12 @@ import {HashRouter as Router, Route, Link} from 'react-router-dom';
 //Component Imports
 // import FeedbackList from './FeedbackList/FeedbackList';
 import Home from '../Home/Home';
-import FeelingItem from '../FeelingItem/FeelingItem';
-import UnderstandingItem from '../UnderstandingItem/UnderstandingItem';
-import SupportItem from '../SupportItem/SupportItem';
-import CommentsItem from '../CommentsItem/CommentsItem';
-import ReviewItem from '../ReviewItem/ReviewItem';
-import ThankYouItem from '../ThankYouItem/ThankYouItem';
+import FeelingForm from '../FeelingForm/FeelingForm';
+import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
+import SupportForm from '../SupportForm/SupportForm';
+import CommentsForm from '../CommentsForm/CommentsForm';
+import ReviewForm from '../ReviewForm/ReviewForm';
+import ThankYouForm from '../ThankYouForm/ThankYouForm';
 
 function App() {
 
@@ -36,19 +36,19 @@ function App() {
            <Link to="/">Home</Link>
          </li>
          <li>
-           <Link to="/feelingItem">Feeling</Link>
+           <Link to="/feelingForm">Feeling</Link>
          </li>
          <li>
-           <Link to="/understandingItem">Understanding</Link>
+           <Link to="/understandingForm">Understanding</Link>
          </li>
          <li>
-           <Link to="/supportItem">Support</Link>
+           <Link to="/supportForm">Support</Link>
          </li>
          <li>
-           <Link to="/commentsItem">Comments</Link>
+           <Link to="/commentsForm">Comments</Link>
          </li>
          <li>
-           <Link to="/reviewItem">Review</Link>
+           <Link to="/reviewForm">Review</Link>
          </li>
        </ul> */}
 
@@ -58,36 +58,32 @@ function App() {
         <h4>Don't forget it!</h4>
       </header> 
  
-
-
-      <hr />
-
       {/* <Route path="/">
         <Home />
       </Route> */}
 
       <Route path="/" exact>
-      <FeelingItem />
+      <FeelingForm />
       </Route>
 
-      <Route path="/understandingItem">
-      <UnderstandingItem />
+      <Route path="/understandingForm">
+      <UnderstandingForm />
       </Route>
 
-      <Route path="/supportItem">
-      <SupportItem />
+      <Route path="/supportForm">
+      <SupportForm />
       </Route>
 
-      <Route path="/commentsItem">
-      <CommentsItem />
+      <Route path="/commentsForm">
+      <CommentsForm />
       </Route>
 
-      <Route path="/reviewItem">
-      <ReviewItem />
+      <Route path="/reviewForm">
+      <ReviewForm />
       </Route>
 
       <Route path="/thanks">
-      <ThankYouItem />
+      <ThankYouForm />
       </Route>
    </div>
 

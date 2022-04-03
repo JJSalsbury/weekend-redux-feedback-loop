@@ -1,13 +1,13 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-function ThankYouItem() {
+function ThankYouForm() {
 
     const history = useHistory()
 
     const handleSubmit = (event) => {
         // event.preventDefault();
-        console.log('ThankYou Item');
+        console.log('ThankYou Form');
         history.push('/');
     }
 
@@ -22,4 +22,4 @@ function ThankYouItem() {
 
 }
 
-export default ThankYouItem;
+export default ThankYouForm;

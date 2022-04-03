@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom'
 
-function UnderstandingItem({understandingItem}) {
-    console.log('UnderstandingItem Component')
+function UnderstandingForm({understandingForm}) {
+    console.log('UnderstandingForm Component')
 
     const [understandingOption, setUnderstandingOption] = useState(0);
 
@@ -19,7 +19,7 @@ function UnderstandingItem({understandingItem}) {
             type:'SET_UNDERSTANDING',
             payload: understandingOption
         })
-        history.push('/supportItem');
+        history.push('/supportForm');
     }
 
 
@@ -36,4 +36,4 @@ function UnderstandingItem({understandingItem}) {
 
 }
 
-export default UnderstandingItem;
+export default UnderstandingForm;
