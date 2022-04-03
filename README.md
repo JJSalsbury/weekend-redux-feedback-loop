@@ -24,12 +24,12 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 
 ## Screen Shot
 
-![alt text](/ScreenShot1.png?raw=true "Screenshot")
-![alt text](/ScreenShot2.png?raw=true "Screenshot")
-![alt text](/ScreenShot3.png?raw=true "Screenshot")
-![alt text](/ScreenShot4.png?raw=true "Screenshot")
-![alt text](/ScreenShot5.png?raw=true "Screenshot")
-![alt text](/ScreenShot6.png?raw=true "Screenshot")
+![ScreenShot 1](/ScreenShot1.png?raw=true "Screenshot")
+![ScreenShot 2](/ScreenShot2.png?raw=true "Screenshot")
+![ScreenShot 3](/ScreenShot3.png?raw=true "Screenshot")
+![ScreenShot 4](/ScreenShot4.png?raw=true "Screenshot")
+![ScreenShot 5](/ScreenShot5.png?raw=true "Screenshot")
+![ScreenShot 6](/ScreenShot6.png?raw=true "Screenshot")
 
 ### Prerequisites
 
