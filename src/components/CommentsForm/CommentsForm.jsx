@@ -1,4 +1,3 @@
-import React from 'react';
 import {useDispatch} from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom';
@@ -28,8 +27,8 @@ function CommentsForm({commentsForm}) {
         <div>
             <p>Any comments you wanted to leave?</p>
             <form  onSubmit={handleClick}>      
-            <input value= {commentsOption} onChange={() => setCommentsOption(event.target.value)} type="text" placeholder="Comments" required/>
-            <button>NEXT</button>
+            <textarea value= {commentsOption} onChange={(event) => setCommentsOption(event.target.value)} className="size" type="text" placeholder="Comments" required/>
+            <button className="size">NEXT</button>
             </form>  
         </div>
     );

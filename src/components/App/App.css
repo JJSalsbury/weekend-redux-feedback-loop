@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: xx-large;
 }
 
 .App-header {
@@ -15,9 +16,14 @@
 }
 
 .App-intro {
-  font-size: large;
+  font-size: x-large;
 }
 
 h4 {
+  font-size: x-large;
   font-style: italic;
+}
+
+.size {
+  font-size: 25px;
 }

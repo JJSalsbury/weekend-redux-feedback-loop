@@ -1,4 +1,3 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom'
@@ -28,8 +27,8 @@ function UnderstandingForm({understandingForm}) {
         <div>
         <p>How well are you understanding the content?</p>
         <form  onSubmit={handleClick}>      
-        <input onChange={event => setUnderstandingOption(event.target.value)} min={1} max={5} required value= {understandingOption} type="number" required/>
-        <button>NEXT</button>
+        <input onChange={event => setUnderstandingOption(event.target.value)} className="size" min={1} max={5} required value= {understandingOption} type="number" required/>
+        <button  className="size">NEXT</button>
         </form>  
         </div>
     );

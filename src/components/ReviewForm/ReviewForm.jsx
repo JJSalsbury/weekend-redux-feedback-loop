@@ -1,6 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux';
+import {useSelector} from 'react-redux';
+import {useHistory} from 'react-router-dom';
 import axios from 'axios';
-import { HashRouter as Router, useHistory } from 'react-router-dom';
 
 
 function ReviewForm() {

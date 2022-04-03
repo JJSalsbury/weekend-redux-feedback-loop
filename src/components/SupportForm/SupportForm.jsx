@@ -28,8 +28,8 @@ function SupportForm({supportForm}) {
         <div>
         <p>How well are you being supported?</p>
         <form  onSubmit={handleClick}>      
-        <input onChange={event => setSupportOption(event.target.value)} min={1} max={5} required value= {supportOption}  type="number" required/>
-        <button>NEXT</button>
+        <input onChange={event => setSupportOption(event.target.value)} className="size" min={1} max={5} required value= {supportOption}  type="number" required/>
+        <button  className="size">NEXT</button>
         </form>  
     </div>
     );
