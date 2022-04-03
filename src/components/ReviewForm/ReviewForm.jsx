@@ -57,7 +57,7 @@ function ReviewForm() {
                 <div>Understanding: {understandingForm}</div>
                 <div>Support: {supportForm}</div>
                 <div>Comments: {commentsForm}</div>
-                <button onClick={handleSubmit}>SUBMIT</button>
+                <button className="size" onClick={handleSubmit}>SUBMIT</button>
             </div>
         </>
     )
