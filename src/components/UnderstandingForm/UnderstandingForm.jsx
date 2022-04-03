@@ -1,11 +1,11 @@
 //Imports
 import { useDispatch } from 'react-redux';
-import {useState} from 'react';
-import {useHistory} from 'react-router-dom'
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom'
 
 
 //Created function to handle user input 
-function UnderstandingForm({understandingForm}) {
+function UnderstandingForm({ understandingForm }) {
 
     //Log'd component to indicate location in console.
     console.log('UnderstandingForm Component');
@@ -28,7 +28,7 @@ function UnderstandingForm({understandingForm}) {
         console.log('Changed page to:');
         //dispatch action type for reducer to run, and payload (user input in state). 
         dispatch({
-            type:'SET_UNDERSTANDING',
+            type: 'SET_UNDERSTANDING',
             payload: understandingOption
         })
         //Onclick, push new location to useHistory, changed location.
@@ -41,11 +41,11 @@ function UnderstandingForm({understandingForm}) {
     //Initial state value in redux store changed to user input. 
     return (
         <div>
-        <p>How well are you understanding the content?</p>
-        <form  onSubmit={handleClick}>      
-        <input onChange={event => setUnderstandingOption(event.target.value)} className="size" min={1} max={5} required value= {understandingOption} type="number" required/>
-        <button  className="size">NEXT</button>
-        </form>  
+            <p>How well are you understanding the content?</p>
+            <form onSubmit={handleClick}>
+                <input onChange={event => setUnderstandingOption(event.target.value)} className="size" min={1} max={5} required value={understandingOption} type="number" required />
+                <button className="size">NEXT</button>
+            </form>
         </div>
     );
 }

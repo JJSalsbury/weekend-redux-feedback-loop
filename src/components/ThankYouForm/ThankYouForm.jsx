@@ -1,5 +1,5 @@
 //Imports
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 //Created function to handle user input
 function ThankYouForm() {
@@ -11,7 +11,7 @@ function ThankYouForm() {
     //Click will change navigation and submit user input to be displayed to the DOM.
     const handleSubmit = (event) => {
         // event.preventDefault();
-        
+
         //Log'd component to indicate location in console.
         console.log('In ThankYou Form');
         //Log'd to indicate location in console.
@@ -27,10 +27,10 @@ function ThankYouForm() {
     return (
 
         <div>
-          <h1>Thank You!</h1>
-        <button className="size" onClick={handleSubmit} type="submit">Start New Feedback</button>
+            <h1>Thank You!</h1>
+            <button className="size" onClick={handleSubmit} type="submit">Start New Feedback</button>
         </div>
-        
+
     )
 }
 

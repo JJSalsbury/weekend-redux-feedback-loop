@@ -1,6 +1,6 @@
 //Imports
-import {useSelector} from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -23,10 +23,10 @@ function ReviewForm() {
 
     //Created object and set property values to current redux state.
     const studentFeedback = {
-    feeling: feelingForm,
-    understanding: understandingForm,
-    support: supportForm,
-    comments: commentsForm
+        feeling: feelingForm,
+        understanding: understandingForm,
+        support: supportForm,
+        comments: commentsForm
     }
 
     //Created function to handle Submit.
@@ -34,7 +34,7 @@ function ReviewForm() {
     const handleSubmit = () => {
         console.log('In reviewForm');
         //axios post to database with studentFeedback object
-        axios.post('/feedback', studentFeedback) 
+        axios.post('/feedback', studentFeedback)
 
             .then(response => {
                 //Onclick, push new location to useHistory, changed location.
@@ -51,15 +51,15 @@ function ReviewForm() {
     //Current state value in redux store changed to user input, displayed on DOM.
     return (
         <>
-        <div>
-        <h1>Review Your Feedback</h1>
-        <div>Feeling: {feelingForm}</div>
-        <div>Understanding: {understandingForm}</div>
-        <div>Support: {supportForm}</div>
-        <div>Comments: {commentsForm}</div>
-        <button onClick={handleSubmit}>SUBMIT</button>
-    </div>
-    </>
+            <div>
+                <h1>Review Your Feedback</h1>
+                <div>Feeling: {feelingForm}</div>
+                <div>Understanding: {understandingForm}</div>
+                <div>Support: {supportForm}</div>
+                <div>Comments: {commentsForm}</div>
+                <button onClick={handleSubmit}>SUBMIT</button>
+            </div>
+        </>
     )
 }
 

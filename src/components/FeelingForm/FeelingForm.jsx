@@ -1,11 +1,11 @@
 //Imports
-import {useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 
 //Created function to handle user input 
-function FeelingForm({feelingForm}) {
+function FeelingForm({ feelingForm }) {
 
     //Log'd to indicate location in console.
     console.log('In new Feedback');
@@ -30,7 +30,7 @@ function FeelingForm({feelingForm}) {
         console.log('Changed page to:');
         //dispatch action type for reducer to run, and payload (user input in state). 
         dispatch({
-            type:'SET_FEELING',
+            type: 'SET_FEELING',
             payload: feelingOption
         })
         //Onclick, push new location to useHistory, changed location.
@@ -44,15 +44,15 @@ function FeelingForm({feelingForm}) {
     return (
 
         <div>
-        <p>How Are You Feeling Today?</p>
-        <section>
-        <form onSubmit={handleClick}>      
-        <input onChange={event => setFeelingOption(event.target.value)} className="size" min={1} max={5} required value= {feelingOption}  type="number"/>
-        <button className="size">NEXT</button>
-        </form>
-        </section>  
+            <p>How Are You Feeling Today?</p>
+            <section>
+                <form onSubmit={handleClick}>
+                    <input onChange={event => setFeelingOption(event.target.value)} className="size" min={1} max={5} required value={feelingOption} type="number" />
+                    <button className="size">NEXT</button>
+                </form>
+            </section>
         </div>
-     )
+    )
 }
 
 //Created export for component.

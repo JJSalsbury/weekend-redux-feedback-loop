@@ -10,7 +10,7 @@ import React from 'react';
 import './App.css';
 import { useEffect } from 'react';
 //Linking not required for this assignment.
-import { HashRouter as Router, Route} from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 //Component Imports
 import FeelingForm from '../FeelingForm/FeelingForm';
@@ -32,37 +32,37 @@ function App() {
   //Render Return wrapped in Router tag.
   //Created route paths for each component.
   return (
-      <Router>
-        <div className='App'>
-          <header className='App-header'>
-            <h1 className='App-title'>Feedback!</h1>
-            <h4>Don't forget it!</h4>
-          </header>
-          <Route path="/" exact>
-            <FeelingForm />
-          </Route>
+    <Router>
+      <div className='App'>
+        <header className='App-header'>
+          <h1 className='App-title'>Feedback!</h1>
+          <h4>Don't forget it!</h4>
+        </header>
+        <Route path="/" exact>
+          <FeelingForm />
+        </Route>
 
-          <Route path="/understandingForm">
-            <UnderstandingForm />
-          </Route>
+        <Route path="/understandingForm">
+          <UnderstandingForm />
+        </Route>
 
-          <Route path="/supportForm">
-            <SupportForm />
-          </Route>
+        <Route path="/supportForm">
+          <SupportForm />
+        </Route>
 
-          <Route path="/commentsForm">
-            <CommentsForm />
-          </Route>
+        <Route path="/commentsForm">
+          <CommentsForm />
+        </Route>
 
-          <Route path="/reviewForm">
-            <ReviewForm />
-          </Route>
+        <Route path="/reviewForm">
+          <ReviewForm />
+        </Route>
 
-          <Route path="/thanks">
-            <ThankYouForm />
-          </Route>
-        </div>
-      </Router>
+        <Route path="/thanks">
+          <ThankYouForm />
+        </Route>
+      </div>
+    </Router>
   );
 }
 

@@ -17,7 +17,7 @@ import logger from 'redux-logger';
 //If action type is the same as the dispatched action, this reducer will run.
 //Reducer will then add the current value of state in the redux.
 //If not, it will return the current state value.
-const setFeeling = ( state = 0, action) => {
+const setFeeling = (state = 0, action) => {
     if (action.type === 'SET_FEELING') {
         return action.payload
     }
@@ -28,7 +28,7 @@ const setFeeling = ( state = 0, action) => {
 //If action type is the same as the dispatched action, this reducer will run.
 //Reducer will then add the current value of state in the redux.
 //If not, it will return the current state value.
-const setUnderstanding = ( state = 0, action) => {
+const setUnderstanding = (state = 0, action) => {
     if (action.type === 'SET_UNDERSTANDING') {
         return action.payload
     }
@@ -39,7 +39,7 @@ const setUnderstanding = ( state = 0, action) => {
 //If action type is the same as the dispatched action, this reducer will run.
 //Reducer will then add the current value of state in the redux.
 //If not, it will return the current state value.
-const setSupport = ( state = 0, action) => {
+const setSupport = (state = 0, action) => {
     if (action.type === 'SET_SUPPORT') {
         return action.payload
     }
@@ -50,7 +50,7 @@ const setSupport = ( state = 0, action) => {
 //If action type is the same as the dispatched action, this reducer will run.
 //Reducer will then add the current value of state in the redux.
 //If not, it will return the current state value.
-const setComments = ( state = '', action) => {
+const setComments = (state = '', action) => {
     if (action.type === 'SET_COMMENTS') {
         return action.payload
     }
@@ -61,7 +61,7 @@ const setComments = ( state = '', action) => {
 //If action type is the same as the dispatched action, this reducer will run.
 //Reducer will then add the current value of state in the redux.
 //If not, it will return the current state value.
-const setSubmit = ( state = [], action) => {
+const setSubmit = (state = [], action) => {
     if (action.type === 'SET_SUBMIT') {
         return action.payload
     }
@@ -85,9 +85,9 @@ const reduxStore = createStore(
 
 //Provider added to set react/redux communication.
 ReactDOM.render(
-<Provider store={reduxStore}>
-<App />
-</Provider>,
-document.getElementById('root'));
+    <Provider store={reduxStore}>
+        <App />
+    </Provider>,
+    document.getElementById('root'));
 
 registerServiceWorker();

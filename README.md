@@ -20,8 +20,6 @@ I was introduced to to REDUX the Monday before the start of my project. By Thurs
 
 When creating the express route I used the app.use method to put the specified middleware function on a specified path. In the code body, I used the server and then created the server requirement. This made it so that my express route couldn't function. Once I moved the line of code with the method after the server requirement, it was able to run. Lesson learned. 
 
-
-
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
 ## Screen Shot
