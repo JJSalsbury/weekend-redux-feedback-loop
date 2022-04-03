@@ -52,11 +52,13 @@ function ReviewForm() {
     return (
         <>
             <div>
-                <h1>Review Your Feedback</h1>
-                <div>Feeling: {feelingForm}</div>
-                <div>Understanding: {understandingForm}</div>
-                <div>Support: {supportForm}</div>
-                <div>Comments: {commentsForm}</div>
+                <div id="feedbackReview">
+                    <h1>Review Your Feedback</h1>
+                    <div>Feeling: {feelingForm}</div>
+                    <div>Understanding: {understandingForm}</div>
+                    <div>Support: {supportForm}</div>
+                    <div>Comments: {commentsForm}</div>
+                </div>
                 <button className="size" onClick={handleSubmit}>SUBMIT</button>
             </div>
         </>
