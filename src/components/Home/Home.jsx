@@ -6,6 +6,7 @@ function Home() {
     const history = useHistory()
 
     const handleClick = () => {
+        event.preventDefault();
         console.log('Changed page to:');
         history.push('/feelingItem');
     }
@@ -17,7 +18,7 @@ function Home() {
           <h1 className='App-title'>Feedback!</h1>
           <h4>Don't forget it!</h4>
         </header>
-        {/* <button onClick={handleClick}>Start Feedback</button> */}
+        <button onClick={handleClick}>Start Feedback</button>
         </div>
         
     );

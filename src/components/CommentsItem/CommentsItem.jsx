@@ -1,14 +1,17 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {useState} from 'react';
+import {useHistory} from 'react-router-dom';
 
 
 function CommentsItem({commentsItem}) {
-    console.log('SupportItem Component')
+    console.log('CommentsItem Component')
 
     const [commentsOption, setCommentsOption] = useState('');
 
     const dispatch = useDispatch();
+
+    const history = useHistory()
 
     const handleClick = (event) => {
         event.preventDefault();
@@ -16,16 +19,16 @@ function CommentsItem({commentsItem}) {
         // history.push('/supportItem');
         dispatch({
             type:'SET_COMMENTS',
-            payload: commentsOption
-            
+            payload: commentsOption           
         })
+        history.push('/reviewItem');
     }
 
     return (
         <div>
             <p>Any comments you wanted to leave?</p>
             <form  onSubmit={handleClick}>      
-            <input value= {commentsOption} onChange={event => setCommentsOption(event.target.value)} type="text" placeholder="Comments" />
+            <input value= {commentsOption} onChange={() => setCommentsOption(event.target.value)} type="text" placeholder="Comments" required/>
             <button>NEXT</button>
             </form>  
         </div>

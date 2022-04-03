@@ -13,9 +13,10 @@ function SupportItem({supportItem}) {
     const history = useHistory()
 
     const handleClick = (event) => {
+        event.preventDefault();
         console.log('Changed page to:');
         dispatch({
-            type:'SET_UNDERSTANDING',
+            type:'SET_SUPPORT',
             payload: supportOption
         })
         history.push('/commentsItem');
@@ -27,7 +28,7 @@ function SupportItem({supportItem}) {
         <div>
         <p>How well are you being supported?</p>
         <form  onSubmit={handleClick}>      
-        <input value= {supportOption} onChange={event => setSupportOption(event.target.value)} type="number"/>
+        <input onChange={event => setSupportOption(event.target.value)} min={1} max={5} required value= {supportOption}  type="number" required/>
         <button>NEXT</button>
         </form>  
     </div>

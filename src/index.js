@@ -37,13 +37,22 @@ const setComments = ( state = '', action) => {
     }
     return state;
 }
+
+const setSubmit = ( state = [], action) => {
+    if (action.type === 'SET_SUBMIT') {
+        return action.payload
+    }
+    return state;
+}
+
 //REDUX STORE
 const reduxStore = createStore(
     combineReducers({
         setFeeling,
         setUnderstanding,
         setSupport,
-        setComments
+        setComments,
+        setSubmit
     }),
     applyMiddleware(logger)
 );

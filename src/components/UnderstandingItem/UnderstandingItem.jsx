@@ -13,6 +13,7 @@ function UnderstandingItem({understandingItem}) {
     const history = useHistory()
 
     const handleClick = (event) => {
+        event.preventDefault();
         console.log('Changed page to:');
         dispatch({
             type:'SET_UNDERSTANDING',
@@ -27,7 +28,7 @@ function UnderstandingItem({understandingItem}) {
         <div>
         <p>How well are you understanding the content?</p>
         <form  onSubmit={handleClick}>      
-        <input value= {understandingOption} onChange={event => setUnderstandingOption(event.target.value)} type="number"/>
+        <input onChange={event => setUnderstandingOption(event.target.value)} min={1} max={5} required value= {understandingOption} type="number" required/>
         <button>NEXT</button>
         </form>  
         </div>

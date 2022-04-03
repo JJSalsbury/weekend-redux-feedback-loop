@@ -14,20 +14,11 @@ import FeelingItem from '../FeelingItem/FeelingItem';
 import UnderstandingItem from '../UnderstandingItem/UnderstandingItem';
 import SupportItem from '../SupportItem/SupportItem';
 import CommentsItem from '../CommentsItem/CommentsItem';
+import ReviewItem from '../ReviewItem/ReviewItem';
 
 function App() {
 
-  // const dispatch = useDispatch();
 
-  // const getFeedback = () => {
-  //   axios.get('/api/feedback')
-  //   .then(response => {
-  //     console.log(response.data);
-  //     dispatch({ type: 'SET_FEEDBACK', payload: response.data})
-  //   }).catch(err => {
-  //     console.log('Error in getting feedback from DB', err);
-  //   })
-  // }
 
   useEffect(() => {
     console.log('in useEffect');
@@ -37,7 +28,7 @@ function App() {
   return (
     <div>
    <Router>
-     
+{/*      
      <div>
        <ul>
          <li>
@@ -55,20 +46,24 @@ function App() {
          <li>
            <Link to="/commentsItem">Comments</Link>
          </li>
-       </ul>
-    {/* <div className='App'>
+         <li>
+           <Link to="/reviewItem">Review</Link>
+         </li>
+       </ul> */}
+
+    <div className='App'>
       <header className='App-header'>
         <h1 className='App-title'>Feedback!</h1>
         <h4>Don't forget it!</h4>
-      </header> */}
-      {/* <FeedbackList /> */}
+      </header> 
+ 
 
-      {/* Hr tag defining thematic break in html page */}
+
       <hr />
 
-      <Route path="/">
+      {/* <Route path="/">
         <Home />
-      </Route>
+      </Route> */}
 
       <Route path="/feelingItem" exact>
       <FeelingItem />
@@ -84,6 +79,10 @@ function App() {
 
       <Route path="/commentsItem">
       <CommentsItem />
+      </Route>
+
+      <Route path="/reviewItem">
+      <ReviewItem />
       </Route>
    </div>
 

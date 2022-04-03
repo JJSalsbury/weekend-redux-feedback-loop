@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {useState} from 'react';
 import {useHistory} from 'react-router-dom'
 
@@ -13,6 +13,7 @@ function FeelingItem({feelingItem}) {
     const history = useHistory()
 
     const handleClick = (event) => {
+        event.preventDefault();
         console.log('Changed page to:');
         dispatch({
             type:'SET_FEELING',
@@ -22,13 +23,17 @@ function FeelingItem({feelingItem}) {
     }
 
     return (
-        <div>
+
+        <>
         <p>How Are You Feeling Today?</p>
+        <section>
         <form  onSubmit={handleClick}>      
-        <input value= {feelingOption} onChange={event => setFeelingOption(event.target.value)} type="number"/>
+        <input onChange={event => setFeelingOption(event.target.value)} min={1} max={5} required value= {feelingOption}  type="number"/>
         <button>NEXT</button>
-        </form>  
-        </div>
+        </form>
+        </section>  
+        </>
+
     );
 
 }
